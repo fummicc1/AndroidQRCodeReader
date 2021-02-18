@@ -6,7 +6,7 @@ data class BookResponse(
 
 data class Book(
     val id: String,
-    val volumenInfo: VolumeInfo
+    val volumeInfo: VolumeInfo
 )
 
 data class VolumeInfo(
@@ -14,7 +14,7 @@ data class VolumeInfo(
     val authors: List<String>,
     val publishedDate: String,
     val pageCount: Int,
-    val imageLinks: List<ImageLinks>,
+    val imageLinks: ImageLinks,
     val language: String
 )
 

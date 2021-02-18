@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                     bookService.getBook(contents)
                 }
             }.onSuccess {
-                binding.textView.text = it.items.first().volumenInfo.title
+                binding.textView.text = it.items.first().volumeInfo.title
             }.onFailure {
                 Log.d("onActivityResult", it.toString())
             }
